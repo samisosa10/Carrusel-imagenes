@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+header a {
+  padding-right: 15px;
+}
+
+header a:last-child {
+  color: rgb(255, 136, 0);
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.orange-img-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.orange-img-container img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+}
+
+h2 {
+  color: rgb(255, 136, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.some-jobs {
+  color: rgb(255, 136, 0);
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.img-container--slider {
+  position: relative;
+  top: 900px;
+  display: flex;
+  gap: 20px;
+  height: 356px;
+  padding: 0 50px 500px 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  /*de esta forma creamos un scroll horizontal*/
+}
+
+.img-container {
+  min-width: 200px;
+  height: 300px;
+}
+
+.img-container img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
